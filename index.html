@@ -2,31 +2,44 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | Ping coming soon page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <header>
+    <img src="./images/logo.svg" alt="logo" width="86" height="26">
+  </header>
 
-  We are launching soon!
+  <main>
+    <h1>
+      <span>We are launching</span> soon!
+    </h1>
 
-  Subscribe and get notified
+    <h2>Subscribe and get notified</h2>
 
-  Notify Me
+    <form autocomplete="off">
+      <input type="email" placeholder="Your email address...">
+      <p class="mobile-error-state">Please provide a valid email address</p>
+      <input type="submit" value="Notify Me">
+    </form>
 
-  &copy; Copyright Ping. All rights reserved.
+    <p class="desktop-error-state">Please provide a valid email address</p>
 
-      <footer class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+    <img src="./images/illustration-dashboard.png" alt="dashboard-illustration">
+  </main>
+
+    <footer>
+      <p>&copy; Copyright Ping. All rights reserved.</p>
+
+      <section class="attribution">
+        <p>
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. | Coded by <a href="https://github.com/grace-sampao" target="_blank">Grace Sampao</a>.
+        </p>
+      </section>
     </footer>
 </body>
 </html>
