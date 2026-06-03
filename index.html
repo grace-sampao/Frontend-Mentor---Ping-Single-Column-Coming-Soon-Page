@@ -27,13 +27,13 @@
 
     <p id="message" class="libre-franklin-light">Subscribe and get notified</p>
 
-    <form autocomplete="off">
-      <input type="email" placeholder="Your email address..." class="libre-franklin-light">
-      <p class="mobile-error-state">Please provide a valid email address</p>
+    <form id="subscription-form" autocomplete="off">
+      <input type="email" placeholder="Your email address..." class="libre-franklin-light" id="email-input">
+      <p class="mobile-error-state" id="mobile-error-message">Please provide a valid email address</p>
       <input type="submit" value="Notify Me">
     </form>
 
-    <p class="desktop-error-state">Please provide a valid email address</p>
+    <p class="desktop-error-state" id="desktop-error-message">Please provide a valid email address</p>
 
     <img src="./images/illustration-dashboard.png" alt="dashboard-illustration">
   </main>
@@ -56,6 +56,6 @@
       </section>
     </footer>
 
-    <script src="main.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
