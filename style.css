@@ -37,7 +37,8 @@ html {
   color: var(--blue-950);
 }
 
-.attribution a, .attribution a:visited {
+.attribution a,
+.attribution a:visited {
   color: var(--blue-500);
   text-decoration: none;
 }
@@ -111,7 +112,7 @@ html {
   input[type="submit"] {
     height: 3rem;
     border-radius: 2rem;
-    border:none;
+    border: none;
     background-color: var(--blue-500);
     color: white;
     margin-bottom: 2.5rem;
@@ -122,7 +123,7 @@ html {
     display: none;
   }
 
-  img[alt="dashboard-illustration"]{
+  img[alt="dashboard-illustration"] {
     object-fit: cover;
     width: 100%;
   }
@@ -136,7 +137,7 @@ html {
     margin-bottom: 2rem;
   }
 
-  .social-media-icons > svg {
+  .social-media-icon {
     width: 1.25rem;
     height: 1.25rem;
     justify-self: center;
@@ -222,7 +223,7 @@ html {
   input[type="submit"] {
     height: 3rem;
     border-radius: 2rem;
-    border:none;
+    border: none;
     background-color: var(--blue-500);
     color: white;
     margin-bottom: 2.5rem;
@@ -264,13 +265,13 @@ html {
     margin-bottom: 1rem;
   }
 
-  .social-media-icons > svg {
+  .social-media-icon {
     width: 1.25rem;
     height: 1.25rem;
     justify-self: center;
   }
 
-  .social-media-icons > svg:hover {
+  .social-media-icon:hover {
     width: 1.25rem;
     height: 1.25rem;
     background-color: var(--blue-500);
