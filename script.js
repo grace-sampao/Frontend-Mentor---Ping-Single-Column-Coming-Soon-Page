@@ -12,17 +12,23 @@ function submitForm(event) {
     mobileErrorMessage.innerHTML = "Whoops! It looks like you forgot to add your email.";
     mobileErrorMessage.style.display = 'block';
     emailInput.style.borderColor = 'hsl(354, 100%, 66%)';
+
+    event.preventDefault();
   } else if (emailInput.value == false && screen.width >= 1024) {
     desktopErrorMessage.innerHTML = "Whoops! It looks like you forgot to add your email.";
     desktopErrorMessage.style.display = 'block';
     emailInput.style.borderColor = 'hsl(354, 100%, 66%)';
+
+    event.preventDefault();
   } else if (pattern.test(emailInput.value) === false && screen.width < 1024) {
     mobileErrorMessage.style.display = 'block';
     emailInput.style.borderColor = 'hsl(354, 100%, 66%)';
+
+    event.preventDefault();
   } else if (pattern.test(emailInput.value) === false && screen.width >= 1024) {
     desktopErrorMessage.style.display = 'block';
     emailInput.style.borderColor = 'hsl(354, 100%, 66%)';
-  }
 
-  event.preventDefault();
+    event.preventDefault();
+  }
 }
